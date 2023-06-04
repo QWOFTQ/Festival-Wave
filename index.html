@@ -57,17 +57,20 @@ https://www.tooplate.com/view/2121-wave-cafe
             </nav>
           </div>
         </div>
+
         <div class="tm-right">
           <main class="tm-main">
             <div id="drink" class="tm-page-content">
               <!-- Drink Menu Page -->
               <nav class="tm-black-bg tm-drinks-nav">
                 <ul>
+                  <div id="temperature"></div>
                   <li>
                     <a href="#" class="tm-tab-link active" data-id="cold"
                       >Seoul</a
                     >
                   </li>
+
                   <li>
                     <a href="#" class="tm-tab-link" data-id="hot">Chungnam</a>
                   </li>
@@ -84,7 +87,10 @@ https://www.tooplate.com/view/2121-wave-cafe
                       src="img/iced-americano.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(1,this)"
+                      onmouseout="changeImage(2,this)"
                     />
+
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
                         <a
@@ -92,7 +98,8 @@ https://www.tooplate.com/view/2121-wave-cafe
                           rel="nofollow"
                           target="_parent"
                           >밤의 석조전</a
-                        ><span class="tm-list-item-price">04.11. ~ 05.11.</span>
+                        >
+                        <span class="tm-list-item-price">04.11. ~ 05.11.</span>
                       </h3>
                       <p class="tm-list-item-description">
                         전문 해설사와 함께하는 '석조전 야간 탐방'등 여러 체험이
@@ -100,12 +107,16 @@ https://www.tooplate.com/view/2121-wave-cafe
                       </p>
                     </div>
                   </div>
+
                   <div class="tm-list-item">
                     <img
                       src="img/iced-cappuccino.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(3,this)"
+                      onmouseout="changeImage(4,this)"
                     />
+
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
                         <a
@@ -126,6 +137,8 @@ https://www.tooplate.com/view/2121-wave-cafe
                       src="img/iced-espresso.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(5,this)"
+                      onmouseout="changeImage(6,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -147,6 +160,8 @@ https://www.tooplate.com/view/2121-wave-cafe
                       src="img/iced-latte.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(7,this)"
+                      onmouseout="changeImage(8,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -173,6 +188,8 @@ https://www.tooplate.com/view/2121-wave-cafe
                       src="img/hot-americano.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(9,this)"
+                      onmouseout="changeImage(10,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -191,9 +208,11 @@ https://www.tooplate.com/view/2121-wave-cafe
                   </div>
                   <div class="tm-list-item">
                     <img
-                      src="img/hot-cappuccino.png"
+                      src="img/피나클랜드 불꽃.jpg"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(11,this)"
+                      onmouseout="changeImage(12,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -215,6 +234,8 @@ https://www.tooplate.com/view/2121-wave-cafe
                       src="img/hot-espresso.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(13,this)"
+                      onmouseout="changeImage(14,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -233,9 +254,11 @@ https://www.tooplate.com/view/2121-wave-cafe
                   </div>
                   <div class="tm-list-item">
                     <img
-                      src="img/hot-latte.png"
+                      src="img/부소산.jpg"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(15,this)"
+                      onmouseout="changeImage(16,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -262,6 +285,8 @@ https://www.tooplate.com/view/2121-wave-cafe
                       src="img/smoothie-1.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(17,this)"
+                      onmouseout="changeImage(18,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -283,6 +308,8 @@ https://www.tooplate.com/view/2121-wave-cafe
                       src="img/smoothie-2.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(19,this)"
+                      onmouseout="changeImage(20,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -301,9 +328,11 @@ https://www.tooplate.com/view/2121-wave-cafe
                   </div>
                   <div class="tm-list-item">
                     <img
-                      src="img/smoothie-3.png"
+                      src="img/고사리.jpg"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(21,this)"
+                      onmouseout="changeImage(22,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -325,6 +354,8 @@ https://www.tooplate.com/view/2121-wave-cafe
                       src="img/smoothie-4.png"
                       alt="Image"
                       class="tm-list-item-img"
+                      onclick="changeImage(23,this)"
+                      onmouseout="changeImage(24,this)"
                     />
                     <div class="tm-black-bg tm-list-item-text">
                       <h3 class="tm-list-item-name">
@@ -639,6 +670,8 @@ https://www.tooplate.com/view/2121-wave-cafe
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+
     <script>
       function setVideoSize() {
         const vidWidth = 1920
