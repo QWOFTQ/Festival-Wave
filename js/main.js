@@ -95,3 +95,5 @@ function changeImage(x, image) {
     image.src = 'img/smoothie-4.png'
   }
 }
+
+// 문의사항 제출 버튼 누르면 제출 성공했다는 알림 띄우는 ok 함수 만들기

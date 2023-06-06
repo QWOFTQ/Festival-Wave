@@ -456,7 +456,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                   class="tm-black-bg tm-special-item"
                   style="text-align: center"
                 >
-                  <img src="img/tulip.png" alt="Image" />
+                  <img src="img/tulip.png" alt="Image" class="img" />
                   <div class="tm-special-item-description">
                     <h2 class="tm-text-primary tm-special-item-title">
                       캐나다 오타와 튤립 축제
@@ -479,7 +479,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                   class="tm-black-bg tm-special-item"
                   style="text-align: center"
                 >
-                  <img src="img/BIFFF.png" alt="Image" />
+                  <img src="img/BIFFF.png" alt="Image" class="img" />
                   <div class="tm-special-item-description">
                     <h2 class="tm-text-primary tm-special-item-title">
                       벨기에 브뤼셀 <br />
@@ -503,7 +503,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                   class="tm-black-bg tm-special-item"
                   style="text-align: center"
                 >
-                  <img src="img/holland.png" alt="Image" />
+                  <img src="img/holland.png" alt="Image" class="img" />
                   <div class="tm-special-item-description">
                     <h2 class="tm-text-primary tm-special-item-title">
                       네덜란드 쾨켄호프 꽃 <br />축제
@@ -528,7 +528,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                   class="tm-black-bg tm-special-item"
                   style="text-align: center"
                 >
-                  <img src="img/bath.png" alt="Image" />
+                  <img src="img/bath.png" alt="Image" class="img" />
                   <div class="tm-special-item-description">
                     <h2 class="tm-text-primary tm-special-item-title">
                       영국 바스 프린지 <br />페스티벌
@@ -552,7 +552,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                   class="tm-black-bg tm-special-item"
                   style="text-align: center"
                 >
-                  <img src="img/vivid.png" alt="Image" />
+                  <img src="img/vivid.png" alt="Image" class="img" />
                   <div class="tm-special-item-description">
                     <h2 class="tm-text-primary tm-special-item-title">
                       호주 비비드 시드니
@@ -575,7 +575,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                   class="tm-black-bg tm-special-item"
                   style="text-align: center"
                 >
-                  <img src="img/design.png" alt="Image" />
+                  <img src="img/design.png" alt="Image" class="img" />
                   <div class="tm-special-item-description">
                     <h2 class="tm-text-primary tm-special-item-title">
                       도쿄 디자인 페스타
@@ -609,7 +609,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                 </p>
               </div>
               <div class="tm-black-bg tm-contact-form-container tm-align-right">
-                <form action="" method="POST" id="contact-form">
+                <form action="#" id="contact-form">
                   <div class="tm-form-group">
                     <input
                       type="text"
@@ -617,6 +617,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                       class="tm-form-control"
                       placeholder="Name"
                       required=""
+                      id="name"
                     />
                   </div>
                   <div class="tm-form-group">
@@ -626,6 +627,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                       class="tm-form-control"
                       placeholder="Email"
                       required=""
+                      id="email"
                     />
                   </div>
                   <div class="tm-form-group tm-mb-30">
@@ -635,10 +637,16 @@ https://www.tooplate.com/view/2121-wave-cafe
                       class="tm-form-control"
                       placeholder="Message"
                       required=""
+                      id="message"
                     ></textarea>
                   </div>
                   <div>
-                    <button type="submit" class="tm-btn-primary tm-align-right">
+                    <button
+                      type="submit"
+                      class="tm-btn-primary tm-align-right"
+                      id="submit"
+                      onclick="sendMail()"
+                    >
                       Submit
                     </button>
                   </div>
@@ -674,6 +682,18 @@ https://www.tooplate.com/view/2121-wave-cafe
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/email.js"></script>
+
+    <!-- 이메일 기능 -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init('s3NJ2gPYXiR9MiXxR')
+      })()
+    </script>
 
     <script>
       function setVideoSize() {
@@ -772,6 +792,8 @@ https://www.tooplate.com/view/2121-wave-cafe
           }
         })
       })
+
+      // email 기능
     </script>
   </body>
 </html>

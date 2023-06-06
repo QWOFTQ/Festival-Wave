@@ -10,7 +10,7 @@ fetch('https://goweather.herokuapp.com/weather/Chungcheongnam-do')
     document.getElementById('temp1').innerHTML = data['temperature']
   })
 
-fetch('https://goweather.herokuapp.com/weather/Jeju')
+fetch('https://goweather.herokuapp.com/weather/Seoul')
   .then((response) => response.json())
   .then((data) => {
     document.getElementById('temp2').innerHTML = data['temperature']
