@@ -94,6 +94,14 @@ function changeImage(x, image) {
   if (x == 24) {
     image.src = 'img/smoothie-4.png'
   }
+
+  if (x == 25) {
+    image.src = 'img/캐나다.jpg'
+  }
+
+  if (x == 26) {
+    image.src = 'img/tulip.png'
+  }
 }
 
 // 문의사항 제출 버튼 누르면 제출 성공했다는 알림 띄우는 ok 함수 만들기
