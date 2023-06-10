@@ -382,9 +382,12 @@ https://www.tooplate.com/view/2121-wave-cafe
             <!-- About Us Page -->
             <div id="about" class="tm-page-content">
               <div class="tm-black-bg tm-mb-20 tm-about-box-1">
-                <h2 class="tm-text-primary tm-about-header">
+                <a
+                  href="https://www.youtube.com/embed/c2b7wmi90bc"
+                  class="tm-text-primary tm-about-header"
+                >
                   About Festival Wave
-                </h2>
+                </a>
                 <div class="tm-list-item tm-list-item-2">
                   <img
                     src="img/about-1.png"
@@ -394,7 +397,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                   <div class="tm-list-item-text-2">
                     <p>
                       강채린: 웹 디자인, Festival of abroad Page 제작, About Us
-                      Page 제작<br />github:
+                      Page 제작, Contact Page 제작, Javascript<br />github:
                       <a
                         href="https://github.com/QWOFTQ?tab=repositories"
                         rel="nofollow"
@@ -411,7 +414,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     </p>
                     <p>
                       홍예진: 웹 디자인, Festival of Korea Page 제작, 웹페이지
-                      데모 영상 촬영<br />github:
+                      데모 영상 촬영, Javascript<br />github:
                       <a
                         href="https://github.com/Han-Enc?tab=repositories"
                         rel="nofollow"
@@ -433,16 +436,47 @@ https://www.tooplate.com/view/2121-wave-cafe
               <div class="tm-black-bg tm-mb-20 tm-about-box-2">
                 <div class="tm-list-item tm-list-item-2">
                   <div class="tm-list-item-text-2">
-                    <h2 class="tm-text-primary">YOUTUBE</h2>
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/c2b7wmi90bc"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
+                    <h2 class="tm-text-primary">Weather</h2>
+                    <div class="card">
+                      <div class="search">
+                        <input
+                          type="text"
+                          placeholder="enter city name"
+                          spellcheck="false"
+                        />
+                        <button><img src="img/weather/search.png" /></button>
+                      </div>
+
+                      <div class="error">
+                        <p>Invalid city name</p>
+                      </div>
+
+                      <div class="weather">
+                        <img
+                          src="img/weather/clouds.png"
+                          class="weather-icon"
+                        />
+                        <h1 class="temp">21.2°C</h1>
+                        <h2 class="city">Seoul</h2>
+                        <div class="details">
+                          <div class="col">
+                            <img src="img/weather/humidity.png" />
+                            <div>
+                              <p>Humidity</p>
+                              <p class="humidity">78%</p>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <img src="img/weather/wind.png" />
+                            <div>
+                              <p>Wind Speed</p>
+                              <p class="wind">3.5m/s</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -694,6 +728,7 @@ https://www.tooplate.com/view/2121-wave-cafe
         emailjs.init('s3NJ2gPYXiR9MiXxR')
       })()
     </script>
+    <!-- 이메일 기능 끝 -->
 
     <script>
       function setVideoSize() {
@@ -792,8 +827,6 @@ https://www.tooplate.com/view/2121-wave-cafe
           }
         })
       })
-
-      // email 기능
     </script>
   </body>
 </html>
